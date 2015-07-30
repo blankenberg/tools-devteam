@@ -24,6 +24,7 @@
                     <environment_variable action="set_to" name="FONTCONFIG_ROOT_PATH">$INSTALL_DIR/lib</environment_variable>
                     <environment_variable action="prepend_to" name="PATH">$INSTALL_DIR/bin</environment_variable>
                     <environment_variable action="set_to" name="FONTCONFIG_FILE">$INSTALL_DIR/etc/fonts/fonts.conf</environment_variable>
+                    <environment_variable action="prepend_to" name="PKG_CONFIG_PATH">$INSTALL_DIR/lib/pkgconfig</environment_variable>
                 </action>
             </actions>
         </install>
