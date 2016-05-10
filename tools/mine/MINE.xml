@@ -1,4 +1,4 @@
-<tool id="maximal_information_based_nonparametric_exploration" name="MINE" version="0.0.1">
+<tool id="maximal_information_based_nonparametric_exploration" name="MINE" version="0.0.2">
   <description>- Maximal Information-based Nonparametric Exploration</description>
   <requirements>
       <requirement type="package" version="1.0.1">MINE</requirement>
@@ -9,7 +9,7 @@
     --infile "${input_file}"
     
     #if str( $master_variable_type.master_variable_type_selector ) in [ 'allPairs', 'adjacentPairs' ]:
-      --master_variable "${master_variable_type.master_variable_type_selector}"
+      --master_variable "-${master_variable_type.master_variable_type_selector}"
     #else:
         --master_variable "${master_variable_type.master_variable}"
     #end if

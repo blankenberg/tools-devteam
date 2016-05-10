@@ -9,7 +9,7 @@ import sys, optparse, os, tempfile, subprocess, shutil
 
 CHUNK_SIZE = 2**20 #1mb
 
-BASE_NAME = "galaxy_mime_file.txt"
+BASE_NAME = "galaxy_mime_file.csv"
 JOB_ID = "galaxy_mine"
 
 def cleanup_before_exit( tmp_dir ):
@@ -48,7 +48,7 @@ def __main__():
     
     os.symlink( options.infile, tmp_input_name )
     
-    cmd = 'java -jar "%s" "%s" %s -cv%s -exp%s -c%s %s "%s"' % ( options.jar, tmp_input_name, options.master_variable, options.cv, options.exp, options.c, permute, JOB_ID )
+    cmd = 'java -jar "%s" "%s" %s -cv%s -exp%s -c%s %s id="%s"' % ( options.jar, tmp_input_name, options.master_variable, options.cv, options.exp, options.c, permute, JOB_ID )
     print cmd
     
     #set up stdout and stderr output options
