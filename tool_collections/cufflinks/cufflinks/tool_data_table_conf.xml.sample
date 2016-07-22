@@ -1,5 +1,5 @@
 <tables>
-    <table name="fasta_indexes" comment_char="#">
+    <table name="fasta_indexes" comment_char="#" allow_duplicate_entries="False">
         <columns>value, dbkey, name, path</columns>
         <file path="tool-data/fasta_indexes.loc" />
     </table>

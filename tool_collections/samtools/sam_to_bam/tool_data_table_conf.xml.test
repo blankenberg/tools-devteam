@@ -1,9 +1,9 @@
 <tables>
-    <table name="fasta_indexes" comment_char="#">
+    <table name="fasta_indexes" comment_char="#" allow_duplicate_entries="False">
         <columns>value, dbkey, name, path</columns>
         <file path="${__HERE__}/test-data/cached_locally/fasta_indexes.loc" />
     </table>
-    <table name="all_fasta" comment_char="#">
+    <table name="all_fasta" comment_char="#" allow_duplicate_entries="False">
         <columns>value, dbkey, name, path</columns>
         <file path="${__HERE__}/test-data/cached_locally/all_fasta.loc" />
     </table>

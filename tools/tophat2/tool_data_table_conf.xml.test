@@ -1,5 +1,5 @@
 <tables>
-    <table name="tophat2_indexes" comment_char="#">
+    <table name="tophat2_indexes" comment_char="#" allow_duplicate_entries="False">
         <columns>value, dbkey, name, path</columns>
         <file path="${__HERE__}/test-data/bowtie2_indices.loc" />
     </table>

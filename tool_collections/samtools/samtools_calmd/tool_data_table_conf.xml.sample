@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tables>
-    <table comment_char="#" name="fasta_indexes">
+    <table comment_char="#" name="fasta_indexes" allow_duplicate_entries="False">
         <columns>value, dbkey, name, path</columns>
         <file path="tool-data/fasta_indexes.loc" />
     </table>
